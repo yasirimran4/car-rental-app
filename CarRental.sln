@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental", "CarRental\CarRental.csproj", "{EEACC2A7-CD37-49F5-BC41-5F103C164F7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEACC2A7-CD37-49F5-BC41-5F103C164F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEACC2A7-CD37-49F5-BC41-5F103C164F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEACC2A7-CD37-49F5-BC41-5F103C164F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEACC2A7-CD37-49F5-BC41-5F103C164F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
