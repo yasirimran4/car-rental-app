@@ -1,0 +1,17 @@
+@model List<Car>
+
+<html>
+<head>
+    <title>Car Rental</title>
+</head>
+<body>
+<h1>Car Rental Application</h1>
+<h2>Booked Cars</h2>
+<ul>
+    @foreach (var car in Model)
+    {
+        <li>@car.Id - @car.Name @car.PricePerDay</li>
+    }
+</ul>
+</body>
+</html>

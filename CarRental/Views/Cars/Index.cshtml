@@ -1,0 +1,21 @@
+@model List<Car>
+
+<html>
+<head>
+    <title>Car Rental</title>
+</head>
+<body>
+<h1>Car Rental Application</h1>
+<h2>Available Cars</h2>
+<ul>
+    @foreach (var car in Model)
+    {
+        <li>@car.Id - @car.Name @car.PricePerDay</li>
+        <form method="post" asp-action="Book" asp-controller="Cars">
+            <input type="hidden" name="Id" value="@car.Id"/>
+            <button type="submit">Book</button>
+        </form>
+    }
+</ul>
+</body>
+</html>
