@@ -5,17 +5,31 @@
     <title>Car Rental</title>
 </head>
 <body>
-<h1>Car Rental Application</h1>
 <h2>Available Cars</h2>
-<ul>
-    @foreach (var car in Model)
-    {
-        <li>@car.Id - @car.Name @car.PricePerDay</li>
-        <form method="post" asp-action="Book" asp-controller="Cars">
-            <input type="hidden" name="Id" value="@car.Id"/>
-            <button type="submit">Book</button>
-        </form>
-    }
-</ul>
+<p>Click on Book button in front of any car to book it.</p>
+<div class="container">
+    <div class="row">
+        @foreach (var car in Model)
+        {
+            <div class="card col-md-6 col-lg-4 p-2 my-2">
+                <div class="card-body">
+                    <div class="card-title fs-2 fw-bold">
+                        @car.Name 
+                    </div>
+                </div>
+                <div class="badge text-bg-success">
+                    Available
+                </div>
+                <p class="card-text">
+                    Rent per day : @car.PricePerDay PKR
+                    </p>
+                <form method="post" asp-action="Book" asp-controller="Cars">
+                        <input type="hidden" name="Id" value="@car.Id"/>
+                        <button type="submit" class="btn btn-primary w-100">Book Card</button>
+                        </form>
+            </div> 
+        }
+    </div>
+</div>
 </body>
 </html>
